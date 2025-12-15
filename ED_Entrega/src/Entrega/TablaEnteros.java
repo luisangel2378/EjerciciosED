@@ -5,7 +5,7 @@ public class TablaEnteros {
 		private Integer[] tabla;
 
 		//Constructor
-		TablaEnteros(Integer[] tabla){
+		public TablaEnteros(Integer[] tabla){
 			
 			if (tabla == null || tabla.length == 0) {
 			throw new IllegalArgumentException("No hay Elementos");
