@@ -3,6 +3,7 @@ package pruebas;
 import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.BeforeClass;
+import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
 import Entrega.TablaEnteros;
@@ -11,14 +12,15 @@ import Entrega.TablaEnteros;
 
 class TablaEnteroTests {
 	
-	private static Integer tabla [];
+	static TablaEnteros tabla;
 	
-	@BeforeClass
+	@BeforeAll
 	public static void setUpBeforeClass() throws Exception{
 	
-		Integer tabla [] = { 1, 2, 3, 4, 5, 6, 7};
+		Integer initabla [] = { 1, 2, 3, 4, 5, 6, 7};
 		
-		TablaEnteros aftertabla = new TablaEnteros(tabla);
+		tabla = new TablaEnteros(initabla);
+		
 	
 	}
 	
